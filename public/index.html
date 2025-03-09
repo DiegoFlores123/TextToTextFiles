@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>Ingresa un texto y escoge el formato a descargar</h2>
+    <form action="/download" method="POST">
+        <textarea name="text" rows="5" cols="50"></textarea><br>
+        <label for="format">Escoge el formato:</label>
+        <select name="format" id="format">
+            <option value="pdf">PDF</option>
+            <option value="docx">DOCX</option>
+            <option value="odt">ODT</option>
+            <option value="html">HTML</option>
+            <option value="rtf">RTF</option>
+            <option value="txt">TXT</option>
+        </select>
+        <button type="submit">Descargar</button>
+    </form>
+</body>
+</html>
